@@ -1,0 +1,113 @@
+.app {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.createButton {
+  background-color: #007bff;
+  color: white;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+}
+
+.createButton:hover {
+  background-color: #0056b3;
+}
+
+.formList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formItem {
+  padding: 15px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.3s;
+}
+
+.formItem:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.formActions {
+  display: flex;
+  gap: 10px;
+}
+
+.viewButton,
+.editButton {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.viewButton {
+  background-color: #28a745;
+  color: white;
+}
+
+.viewButton:hover {
+  background-color: #1e7e34;
+}
+
+.editButton {
+  background-color: #ffc107;
+  color: white;
+}
+
+.editButton:hover {
+  background-color: #d39e00;
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .formItem {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .formActions {
+    justify-content: space-around;
+    width: 100%;
+  }
+}

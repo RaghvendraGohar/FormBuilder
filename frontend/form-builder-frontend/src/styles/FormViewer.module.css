@@ -1,0 +1,40 @@
+.formViewer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .formViewer input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .inputbox{
+  margin: 2%;
+  border-radius: 15px;
+  }
+  
+  .submitButton {
+    background-color: #007bff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .submitButton:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .formViewer input {
+      width: 100%;
+    }
+  
+    .submitButton {
+      width: 100%;
+    }
+  }
+  

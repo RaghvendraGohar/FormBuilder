@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-  baseURL: 'http://localhost:5000/api/forms', 
+  baseURL: 'https://formbuilder-k1a7.onrender.com/api/forms', 
   headers: {
     'Content-Type': 'application/json',
   },

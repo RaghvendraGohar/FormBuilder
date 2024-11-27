@@ -11,6 +11,7 @@ const FormEditor = ({ form, onSave }) => {
 
   const handleTitleChange = (e) => {
     setFormData((prev) => ({ ...prev, title: e.target.value }));
+    
   };
 
   const handleAddInput = (type) => {

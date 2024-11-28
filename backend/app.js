@@ -11,9 +11,15 @@ app.use(bodyParser.json());
 dotenv.config();
 app.use(cors());
 
-mongoose.connect(process.env.MONGO_URI)
-  .then(() => console.log('MongoDB connected'))
-  .catch((err) => console.log(err));
+// mongoose.connect(process.env.MONGO_URI)
+//   .then(() => console.log('MongoDB connected'))
+//   .catch((err) => console.log(err));
+
+const connectionString = process.env.MONGO_URI;
+console.log('MongoDB URI:', connectionString);
+mongoose.connect(connectionString, { useNewUrlParser: true, useUnifiedTopology: true })
+ .then(() => console.log('MongoDB connected'))
+  .catch((err) => console.log('Database connection error:', err));
 
 app.use('/api/forms', formRoutes);
 
